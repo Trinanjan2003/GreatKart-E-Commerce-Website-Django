@@ -121,8 +121,8 @@ def cart(request, total=0, quantity=0 , cart_items=None ):
         # Unbound local error i.e declaration error . Depends on System OK for this one 
         # If Error Comes Declare these
         
-        # tax = 0
-        # grand_total = 0
+        tax = 0
+        grand_total = 0
          
         cart = Cart.objects.get(cart_id=_cart_id(request))
         cart_items = CartItem.objects.filter(cart=cart, is_active=True)
