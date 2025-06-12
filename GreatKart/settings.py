@@ -147,11 +147,6 @@ MESSAGE_TAGS = {
 
 # SMTP Configurations : -   
 
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = "trinanjankumarbaul69@gmail.com"
-# EMAIL_HOST_PASSWORD = "ctyfrtjbmyxpgtzp"
 
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_PORT = config('EMAIL_PORT', cast=int)
